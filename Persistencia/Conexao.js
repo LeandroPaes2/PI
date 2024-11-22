@@ -13,7 +13,7 @@ export default async function conectar() {
             password: process.env.DB_PASSWORD,
             connectTimeout: 60000,
             waitForConnections: true,
-            queueLimit: 20
+            queueLimit: 0,
         });
         return await global.poolConexoes.getConnection();
     }

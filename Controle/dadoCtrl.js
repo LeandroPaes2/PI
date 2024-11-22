@@ -135,7 +135,7 @@ export default class DadoCtrl {
                     resposta.status(500).json(
                         {
                             "status": false,
-                            "mensagem": "Erro ao consultar dados: " + erro.message
+                            "mensagem": "Erro ao consultar 34dados: " + erro.message
                         }
                     );
                 });
@@ -179,7 +179,7 @@ export default class DadoCtrl {
                 html += "</table>";
                 res.status(200).send(html);
             } catch (erro) {
-                res.status(500).send("Erro ao consultar dados: " + erro.message);
+                res.status(500).send("Erro ao consultar22 dados: " + erro.message);
             }
         } else {
             res.status(400).send("Requisição inválida! Consulte a documentação da API.");

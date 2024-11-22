@@ -65,7 +65,7 @@ export default class DadoDAO {
         let sql = "";
         let parametros = [];
         if (isNaN(parseInt(termo))) {
-            sql = "SELECT * FROM dados WHERE data LIKE ? ORDER BY data";
+            sql = "SELECT * FROM dados ORDER BY data";
             parametros.push("%"+termo+"%");
         }
         else{
